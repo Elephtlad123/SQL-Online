@@ -1,0 +1,54 @@
+:root{
+    --selection: #e53d00ff;
+    --statement: #ffe900ff;
+    --baby-powder: #fcfff7ff;
+    --table-name: rgb(58, 120, 255);
+    --field-name: rgb(0, 194, 26);
+
+    --raisin-black: #272727;
+    --raisin-light: #2a2a2a;
+    --dim-gray: #696773;
+    --moonstone: #009fb7;
+    --mustard: #fed766;
+    --antiflash-white: #eff1f3;
+}
+
+.code{
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 125%;
+    letter-spacing: .1em;
+    white-space: 50px;
+    line-height: 3vh;
+}
+
+.line-number{
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 125%;
+    letter-spacing: .1em;
+    white-space: 50px;
+    line-height: 3vh;
+    color: rgba(255,255,255,.5);
+}
+
+#statement{
+    color: var(--statement);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#selection{
+    color: var(--selection);
+    font-weight: 400;
+}
+
+#table-name{
+    color: var(--table-name);
+    font-weight: 400;
+}
+
+#field-name{
+    color: var(--field-name);
+    font-weight: 400;
+}

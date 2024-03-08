@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --raisin-black: #272727;
+    --raisin-light: #2a2a2a;
+    --dim-gray: #696773;
+    --moonstone: #009fb7;
+    --mustard: #fed766;
+    --antiflash-white: #eff1f3;
+}
+
+body{
+    margin: 0;
+}
+
+.banner{
+    position: fixed;
+
+    width: 100%;
+    height: 5%;
+
+    top: 0px;
+    left: 0px;
+
+    background-color: var(--raisin-black);
+
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.4);
+
+    z-index: 2;
+}
+
+.container{
+    position: absolute;
+
+    width: 100%;
+    height: 95%;
+
+    top: 5%;
+
+    display: flex;
+}
+
+.code-space-container{
+    width: 30%;
+    min-width: fit-content;
+
+    background-color: var(--raisin-black);
+
+    resize: horizontal;
+    overflow: hidden;
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.4) inset;
+
+    display: grid;
+    grid-template-rows: 1fr 20fr;
+}
+
+.code-space-container .options-container{
+
+    width: auto;
+    height: 90%;
+
+    margin: 1vw 1vw;
+
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.code-space-container .options-container .option{
+    width: 30%;
+    height: 100%;
+
+    background-color: var(--raisin-light);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 15px;
+
+    display: grid;
+    align-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4) inset;
+}
+
+.code-space-container .options-container .option span{
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 150%;
+    font-weight: 400;
+    color: rgba(255,255,255,.6);
+    text-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.code-space{
+    width: auto;
+    height: 95%;
+    
+    overflow: hidden;
+
+    margin: 1vw;
+
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.4) inset;
+
+    align-self: center;
+
+    background-color: var(--raisin-light);
+}
+
+.code-container{
+    width: auto;
+    height: 97.5%;
+
+    margin: .5vw;
+
+    overflow: hidden scroll;
+
+    text-wrap: nowrap;
+}
+
+.code-container::-webkit-scrollbar {
+    width: 0;
+    height: 5px;
+}
+
+.code-container::-webkit-scrollbar-track {
+    background: none;
+    visibility: hidden;
+}
+
+.code-container::-webkit-scrollbar-thumb {
+    width: 80%;
+    background-color: rgba(255,255,255,0.1);
+
+    border-radius: 500px;
+}
+.data-base-container{
+    flex: 1;
+    background-color: var(--raisin-black);
+    box-shadow: 0 0 5px rgba(0,0,0,0.4) inset;
+}

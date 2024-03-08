@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="banner"></div>
+        <div class="container">
+            <div class="code-space-container">
+                <div class="options-container">
+                    <div class="option" id="sql-option" value="sqlite">
+                        <span>SQLite</span>
+                    </div>
+                    <div class="option" id="script-option" value="main.sql">
+                        <span>
+                            main.sql
+                        </span>
+                    </div>
+                </div>
+                <div class="code-space">
+                    <div class="code-container">
+                        <span class="line-number" value="1">1 -- </span>
+                        <span class="code" id="statement">select</span>
+                        <span class="code" id="selection">*</span>
+                        <br>
+                        <span class="line-number" value="2">2 -- </span>
+                        <span class="code" id="statement">from</span>
+                        <span class="code" id="table-name">Countries</span>
+                        <br>
+                        <span class="line-number" value="3">3 -- </span>
+                        <span class="code" id="statement">where</span>
+                        <span class="code" id="field-name">Capital</span>
+                        <span class="code" id="statement">like</span>
+                        <span class="code" id="selection">"A%"</span>
+                    </div>
+                </div>
+            </div>
+            <div class="data-base-container"></div>
+        </div>
+    </div>
+</body>
+<script src="SQLhandler.js"></script>
+</html>
